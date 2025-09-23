@@ -1,16 +1,26 @@
 <script setup>
+import FeaturePicSlot from './FeaturePicSlot.vue';
+import FeatureSlot from './FeatureSlot.vue';
+import FeatureSlotSecond from './FeatureSlotSecond.vue';
 import PlayVideoSlot from './PlayVideoSlot.vue';
 
 
 </script>
 
 <template>
-    <!-- Parent -->
-    <main class="h-[605px] relative  p-10">
-        <!-- Sub-Parent -->
-        <div class="h-[529px] ml-[200px] mr-[200px] rounded-[20px] shadow-2xl p-5">
-            <!-- Sub-Pagyud -->
-            <div class="h-[358.18px]   mt-15 flex justify-between">
+    <main class="h-[3599.18px] ">
+        <!-- Description -->
+               <p class="pt-[209px] font-semibold text-[64px] leading-[115.99999999999999%] text-[#272727] ml-[93px]">
+                Features That Redefine<br>
+                <span class="text-[85px] text-[#469AF0]">
+                    Queue Management
+                </span>
+            </p>
+      <!-- Learn More Card -->
+         <div class="h-[3419.18px] bg-amber-200 ml-[93px] mr-[120px] mt-[87px] space-y-50
+         ">
+                <!-- First Box -->
+     <div class="border h-[358.18px] w-[1905px] mr-[120px] mt-15 flex justify-between">
                 <!-- Left Side -->
                 <div class="mt-5 ">
                     <!-- The quewie way -->
@@ -36,11 +46,22 @@ import PlayVideoSlot from './PlayVideoSlot.vue';
 
                 <!-- Right Side -->
                 <div class="relative">
-                  <PlayVideoSlot/>
+                  <FeaturePicSlot/>
                 </div>
-
+               
             </div>
-        </div>
-    </main>
 
+            <FeatureSlotSecond>
+                
+            </FeatureSlotSecond>
+
+ 
+
+
+         </div>
+
+
+
+         
+    </main>
 </template>

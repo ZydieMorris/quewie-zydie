@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="flex justify-between h-[660px] ">
+    <div class="flex justify-between h-[700px]  pt-10">
         <!-- Left -->
         <div class="z-50">
             <!-- Description -->
@@ -43,7 +43,7 @@
 
         <!-- Right -->
         <div class=" h-full mr-[110px] mt-[94px] ">
-            <img src="/images/subs.jpg" alt="subscribe" class=" h-[550px]  ml-[450px]" />
+            <img src="/images/subs.jpg"  class=" h-[550px]" />
         </div>
 
     </div>

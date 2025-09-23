@@ -1,16 +1,14 @@
 <script setup>
+import FeatureTopPicSlot from './FeaturePicSlot.vue';
 import PlayVideoSlot from './PlayVideoSlot.vue';
+import FeaturePicSlot from './FeaturePicSlot.vue';
+import FeaturePicSlotSecond from './FeaturePicSlotSecond.vue';
 
 
 </script>
-
 <template>
-    <!-- Parent -->
-    <main class="h-[605px] relative  p-10">
-        <!-- Sub-Parent -->
-        <div class="h-[529px] ml-[200px] mr-[200px] rounded-[20px] shadow-2xl p-5">
-            <!-- Sub-Pagyud -->
-            <div class="h-[358.18px]   mt-15 flex justify-between">
+    <!-- First Box -->
+     <div class="border w-[1905px] mr-[120px] mt-15 flex justify-between">
                 <!-- Left Side -->
                 <div class="mt-5 ">
                     <!-- The quewie way -->
@@ -36,11 +34,8 @@ import PlayVideoSlot from './PlayVideoSlot.vue';
 
                 <!-- Right Side -->
                 <div class="relative">
-                  <PlayVideoSlot/>
+                  <FeaturePicSlotSecond/>
                 </div>
-
+                <slot></slot>
             </div>
-        </div>
-    </main>
-
 </template>

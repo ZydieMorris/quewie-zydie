@@ -5,7 +5,7 @@
    
 
     <!-- Main Container -->
-    <div class=" ml-[110px] mr-[110px]  h-[799px] shadow-2xl rounded-[20px] z-50 bg-white">
+    <div class=" relative ml-[110px] mr-[110px]  h-[799px] shadow-2xl rounded-[20px] z-50 bg-white">
       <!-- Sub-parent -->
       <div class="h-[697.15px] p-5">
         <!-- What is Quewie? -->
@@ -31,23 +31,21 @@
         </div>
 
         <!-- Images -->
-        <div class="flex justify-between mt-12">
+        <div class="flex justify-between mt-12 ">
           <!-- For Administrator -->
-          <div
-            class="w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center ml-30"
-            style="background-image: url('/images/admin.jpg')">
+            <div class="relative" >
+            <img src="/images/admin.jpg"  class="relative w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center  ml-30 overflow-hidden"/>
             <button
-              class="border border-white text-white px-6 py-3 rounded-lg shadow-lg -mt-4">
+              class="absolute top-[38%] left-[40%]  w-[254.48px] h-[72.03px] border border-white text-[#FFFFFF] rounded-[80px] ">
               For Administrator
             </button>
           </div>
 
           <!-- For Guest Experience -->
-          <div
-            class="w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center  mr-30"
-            style="background-image: url('/images/guest.png')">
+          <div class="relative" >
+            <img src="/images/guest.png"  class="relative w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center  mr-30 overflow-hidden"/>
             <button
-              class="bg-[#388FF0] w-[254.48px] h-[72.03px] text-white rounded-[80px] -mt-4">
+              class="absolute top-[39%] left-[20%] bg-[#388FF0] w-[254.48px] h-[72.03px] text-white rounded-[80px] ">
               For Guest Experience
             </button>
           </div>
