@@ -26,13 +26,12 @@ import PlayVideoSlot from './PlayVideoSlot.vue';
                     <!-- The quewie way -->
                     <div class="flex ">
                         <div class="w-[56.39px] h-[51.07px] bg-[#388FF0] rounded-full"></div>
-                        <p class="font-medium text-[25px] leading-[160%] z-50 mt-2 -ml-9.5">The QUEWIE Way:<span
-                                class="text-[#388FF0]"> Stress-Free Service,<br> Happier Customers</span></p>
+                        <p class="font-medium text-[25px] leading-[160%] z-50 mt-2 -ml-9.5">The QUEWIE Feature:<span
+                                class="text-[#388FF0]">  Real-Time Queue<br> Management</span></p>
                     </div>
                     <!-- Quewie description -->
                     <div class="mt-5 leading-[180%]">
-                        <p class="ml-4 font-normal text-[20px] text-[#696984]">QUEWIE simplifies workflows, eases
-                            employee stress,<br> and ensures faster, smoother service for happier<br> customers.</p>
+                        <p class="ml-4 font-normal text-[20px] text-[#696984]">Track, manage, and update queues instantly.<br> Customers can book their spot and get notified in<br> real-time, ensuring smoother flow and less waiting<br> frustration.</p>
                         <!-- Small circle -->
                         <div
                             class="absolute rounded-full bg-[#388FF0] opacity-100 w-[23.17px] h-[20.99px] top-72 left-148.5">
@@ -52,7 +51,7 @@ import PlayVideoSlot from './PlayVideoSlot.vue';
             </div>
 
             <FeatureSlotSecond>
-                
+
             </FeatureSlotSecond>
 
  
