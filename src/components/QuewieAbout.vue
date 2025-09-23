@@ -5,9 +5,9 @@
    
 
     <!-- Main Container -->
-    <div class=" relative ml-[110px] mr-[110px]  h-[799px] shadow-2xl rounded-[20px] z-50 bg-white">
+    <div class=" relative ml-[130px] w-[1266px]  h-[799px] shadow-2xl rounded-[20px] z-50 bg-white">
       <!-- Sub-parent -->
-      <div class="h-[697.15px] p-5">
+      <div class="h-[730px] w-[1169px] relative ml-12">
         <!-- What is Quewie? -->
         <div class="text-center mt-8">
           <p class="font-semibold text-[44px]">
@@ -34,7 +34,7 @@
         <div class="flex justify-between mt-12 ">
           <!-- For Administrator -->
             <div class="relative" >
-            <img src="/images/admin.jpg"  class="relative w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center  ml-30 overflow-hidden"/>
+            <img src="/images/admin.jpg"  class="relative w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center  overflow-hidden"/>
             <button
               class="absolute top-[38%] left-[40%]  w-[254.48px] h-[72.03px] border border-white text-[#FFFFFF] rounded-[80px] ">
               For Administrator
@@ -43,13 +43,15 @@
 
           <!-- For Guest Experience -->
           <div class="relative" >
-            <img src="/images/guest.png"  class="relative w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center  mr-30 overflow-hidden"/>
+            <img src="/images/guest.png"  class="relative w-[539.54px] h-[360.15px] rounded-[20px] bg-cover bg-center flex items-center justify-center  overflow-hidden"/>
             <button
               class="absolute top-[39%] left-[20%] bg-[#388FF0] w-[254.48px] h-[72.03px] text-white rounded-[80px] ">
               For Guest Experience
             </button>
           </div>
         </div>
+
+        
       </div>
     </div>
     <!-- Main Container End -->

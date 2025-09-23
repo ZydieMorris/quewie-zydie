@@ -9,8 +9,8 @@
             <h1 class="font-semibold text-[50px] leading-[30px] pt-[88px] text-white">QUE<span
                     class="text-[#388FF0]">WIE</span></h1>
             <!-- Email Enter -->
-            <div class="flex justify-between mt-8 relative">
-                <p class="font-medium text-[18px] leading-[30px] text-[#A6A6A6]">Get started noew try our product</p>
+            <div class="flex items-center justify-between mt-8 relative align-middle">
+                <p class="font-medium text-[18px] leading-[30px] text-[#A6A6A6] text-center">Get started noew try our product</p>
                 <input type="email" placeholder="Enter your email here"
                     class="relative w-[851px] h-[60px] rounded-[70px] font-medium leading-[30px] text-[18px] text-[#A6A6A6] border-2 border-[#A6A6A6] pl-10" />
                 <div class="absolute right-2 top-1.5 h-[46px] w-[46px] bg-[#388FF0] rounded-full">

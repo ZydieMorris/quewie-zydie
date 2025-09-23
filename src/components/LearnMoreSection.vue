@@ -8,7 +8,7 @@ import PlayVideoSlot from './PlayVideoSlot.vue';
     <!-- Parent -->
     <main class="h-[605px] relative  p-10">
         <!-- Sub-Parent -->
-        <div class="h-[529px] ml-[200px] mr-[200px] rounded-[20px] shadow-2xl p-5">
+        <div class="h-[529px] w-[1266px] ml-[94px] rounded-[20px] shadow-2xl p-5">
             <!-- Sub-Pagyud -->
             <div class="h-[358.18px]   mt-15 flex justify-between">
                 <!-- Left Side -->
