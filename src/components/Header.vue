@@ -15,7 +15,7 @@
             <RouterLink to="/" class="">HOME</RouterLink>
             <RouterLink to="/aboutus" class="">ABOUT US</RouterLink>
             <RouterLink to="/features" class="">FEATURES</RouterLink>
-            <RouterLink to="" class="">SOLUTIONS</RouterLink>
+            <RouterLink to="/solutions" class="">SOLUTIONS</RouterLink>
 
         </div>
         <!-- Login/Logout -->
