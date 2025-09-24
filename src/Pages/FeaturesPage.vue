@@ -7,10 +7,10 @@ import Footer from '../components/Footer.vue';
 
 <template>
     <main>
-        <Header/>
-        <FeatureMain/>
-        <div class="w-full h-[50px] bg-gray-100"></div>
-        <QuewieReview/>
-        <Footer/>
+        <Header />
+        <FeatureMain />
+        <div class="w-full h-[50px] bg-[#ECECEC]"></div>
+        <QuewieReview />
+        <Footer />
     </main>
 </template>

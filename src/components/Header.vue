@@ -1,30 +1,69 @@
 <script setup>
+import { ref } from "vue";
 
+const menuOpen = ref(false);
 </script>
 
 <template>
-    <header
-        class=" flex fixed  bg-white justify-between items-center bg[#ffffff] h-[94px] w-full shadow-[0_4px_6px_rgba(0,0,0,0.1)] pl-[85px] pr-[85px] text-[16px] font-normal z-100">
+  <header
+    class="flex fixed top-0 left-0 w-full items-center justify-between 
+           bg-white h-[94px] border-b border-gray-200
+           shadow-[0px_4px_16.2px_2px_#0000001A] 
+           px-6 md:px-[85px] text-[16px] font-normal z-100">
 
-        <!-- Logo -->
-        <div class="">
-            <img src="/images/quewielogo.png" class="h-[76px] w-[206px]" />
-        </div>
-        <!-- Nav -->
-        <div class=" space-x-13 -ml-[450px] text-black">
-            <RouterLink to="/" class="">HOME</RouterLink>
-            <RouterLink to="/aboutus" class="">ABOUT US</RouterLink>
-            <RouterLink to="/features" class="">FEATURES</RouterLink>
-            <RouterLink to="/solutions" class="">SOLUTIONS</RouterLink>
+    <!-- Logo -->
+    <div>
+      <img src="/images/quewielogo.png" class="h-[50px] w-auto md:h-[76px] md:w-[206px]" />
+    </div>
 
-        </div>
-        <!-- Login/Logout -->
-        <div class="flex justify-end space-x-3">
-            <button>Login</button>
-            <button class="bg-[#3691EF] text-white rounded-[5px]  w-[96px] h-[32px]">Sign up</button>
+    <!-- Nav (Desktop) -->
+    <nav class="hidden md:flex space-x-8 lg:space-x-13 text-black font-medium">
+      <RouterLink to="/" class="hover:text-[#3691EF]">HOME</RouterLink>
+      <RouterLink to="/aboutus" class="hover:text-[#3691EF]">ABOUT US</RouterLink>
+      <RouterLink to="/features" class="hover:text-[#3691EF]">FEATURES</RouterLink>
+      <RouterLink to="/solutions" class="hover:text-[#3691EF]">SOLUTIONS</RouterLink>
+    </nav>
 
-        </div>
+    <!-- Login/Logout (Desktop) -->
+    <div class="hidden md:flex space-x-3">
+      <button class="text-black hover:text-[#3691EF]">Login</button>
+      <button class="bg-[#3691EF] text-white rounded-[5px] w-[96px] h-[32px] hover:bg-blue-600">
+        Sign up
+      </button>
+    </div>
 
-    </header>
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-3xl" @click="menuOpen = !menuOpen">
+      ☰
+    </button>
+  </header>
 
+  <!-- Mobile Dropdown -->
+  <transition name="fade">
+    <div
+      v-if="menuOpen"
+      class="md:hidden absolute top-[94px] left-0 w-full bg-white shadow-lg flex flex-col items-center py-6 space-y-4 z-40">
+      <RouterLink to="/" class="hover:text-[#3691EF]" @click="menuOpen = false">HOME</RouterLink>
+      <RouterLink to="/aboutus" class="hover:text-[#3691EF]" @click="menuOpen = false">ABOUT US</RouterLink>
+      <RouterLink to="/features" class="hover:text-[#3691EF]" @click="menuOpen = false">FEATURES</RouterLink>
+      <RouterLink to="/solutions" class="hover:text-[#3691EF]" @click="menuOpen = false">SOLUTIONS</RouterLink>
+      <button class="w-[90%] bg-[#3691EF] text-white rounded-[5px] h-[40px] hover:bg-blue-600">
+        Sign up
+      </button>
+      <button class="w-[90%] border border-[#3691EF] text-[#3691EF] rounded-[5px] h-[40px] hover:bg-[#3691EF] hover:text-white">
+        Login
+      </button>
+    </div>
+  </transition>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

@@ -1,5 +1,5 @@
 <script setup>
-    import Header from '../components/Header.vue';
+import Header from '../components/Header.vue';
 import QuewieReview from '../components/QuewieReview.vue';
 import SolutionMain from '../components/SolutionMain.vue';
 import Footer from '../components/Footer.vue';
@@ -7,11 +7,11 @@ import Footer from '../components/Footer.vue';
 
 <template>
     <main>
-<Header/>
-<SolutionMain/>
- <div class="w-full h-[50px] bg-gray-100"></div>
- <QuewieReview/>
- <Footer/>
+        <Header />
+        <SolutionMain />
+        <div class="w-full h-[50px] bg-[#ECECEC]"></div>
+        <QuewieReview />
+        <Footer />
     </main>
 
 
