@@ -39,10 +39,10 @@ const menuOpen = ref(false);
   </header>
 
   <!-- Mobile Dropdown -->
-  <transition name="fade">
+  <transition name="fade" class="bg-white">
     <div
-      v-if="menuOpen"
-      class="md:hidden absolute top-[94px] left-0 w-full bg-white shadow-lg flex flex-col items-center py-6 space-y-4 z-40">
+      v-if="menuOpen" 
+      class="md:hidden  top-[94px] left-0 w-full bg-white shadow-lg flex flex-col items-center py-6 space-y-4 z-150 fixed">
       <RouterLink to="/" class="hover:text-[#3691EF]" @click="menuOpen = false">HOME</RouterLink>
       <RouterLink to="/aboutus" class="hover:text-[#3691EF]" @click="menuOpen = false">ABOUT US</RouterLink>
       <RouterLink to="/features" class="hover:text-[#3691EF]" @click="menuOpen = false">FEATURES</RouterLink>

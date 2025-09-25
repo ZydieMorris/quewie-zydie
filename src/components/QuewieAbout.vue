@@ -1,19 +1,11 @@
 <script setup></script>
 
 <template>
-  <!-- Combined Background Container as Parent -->
-  <div class="relative w-full">
-    <!-- Background layers inside parent -->
-    <div class="w-full flex flex-col">
-      <!-- Gray Top -->
-      <div class="w-full h-[300px] bg-[#F7F7F7]"></div>
-
-      <!-- Blue Bottom -->
-      <div class="w-full h-[700px] bg-[#388FF0]"></div>
-    </div>
-
+ <div class="w-full relative h-[950px] bg-blue-400">
+      
     <!-- QuewieAbout Card as Child, centered -->
-    <div class="absolute inset-x-0 top-[60px] flex justify-center px-4 sm:px-6 lg:px-0 z-10">
+    <div class="absolute top-20 inset-x-0  flex justify-center px-4 sm:px-6 lg:px-0 z-10">
+      <!-- Main Content -->
       <div
         class="w-full max-w-[1266px] bg-white rounded-[20px] shadow-[0px_6px_6.6px_-1px_#00000033] py-10 sm:py-12 px-4 sm:px-7">
         <!-- Title -->

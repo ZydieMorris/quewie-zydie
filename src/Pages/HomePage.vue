@@ -11,7 +11,9 @@ import Footer from '../components/Footer.vue';
   <main class="min-h-screen">
     <Header />
     <HeroSection />
+    <!-- QuewieAbout Card overlapping the gray section -->
     <QuewieAbout />
+
     <LearnMoreSection />
     <QuewieReview />
     <Footer />

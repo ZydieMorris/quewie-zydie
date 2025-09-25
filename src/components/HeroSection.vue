@@ -25,9 +25,11 @@
                 class="flex flex-col sm:flex-row justify-center lg:justify-start mt-6 lg:mt-[43px] gap-3 w-full max-w-md mx-auto lg:mx-0">
                 <input type="email" placeholder="Email"
                     class="border border-[#DEDEDE] rounded-[5px] w-full sm:w-[343px] h-[50px] sm:h-[56px] text-base sm:text-lg lg:text-[24px] pl-4" />
-                <button class="bg-[#388FF0] text-white rounded-[5px] w-full sm:w-[215px] h-[50px] sm:h-[55px] italic">
-                    Sign up - it's free
-                </button>
+<button class="bg-[#388FF0] text-white rounded-[5px] pl-25 pr-25 w-full sm:w-[215px] h-[50px] sm:h-[55px] italic whitespace-nowrap flex items-center justify-center">
+    Sign up - it's free
+</button>
+
+
             </div>
             <!-- Email Input End -->
 

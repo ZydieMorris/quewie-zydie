@@ -2,9 +2,9 @@
 </script>
 
 <template>
-  <div class="w-full bg-[#2F2F2F] ">
+  <div class="w-full bg-[#2F2F2F]">
     <!-- Main Content -->
-    <div class="px-6 md:px-[130px] max-w-[1400px] mx-auto">
+    <div class=" max-w-[1400px] mx-auto w-full">
       <!-- Logo -->
       <h1
         class="font-semibold text-[32px] md:text-[50px] leading-[30px] pt-[40px] md:pt-[88px] text-white text-center md:text-left"
@@ -14,7 +14,7 @@
 
       <!-- Email Enter -->
       <div
-        class="flex flex-col md:flex-row items-center md:justify-between mt-8 relative space-y-4 md:space-y-0"
+        class="flex flex-col md:flex-row items-center md:justify-between mt-8 relative space-y-4 md:space-y-0 w-full"
       >
         <p
           class="font-medium text-[16px] md:text-[18px] leading-[30px] text-[#A6A6A6] text-center md:text-left"
@@ -39,7 +39,7 @@
 
       <!-- Bottom -->
       <div
-        class="flex flex-col md:flex-row justify-between items-center text-white font-medium text-[14px] md:text-[18px] leading-[30px] mt-6 pb-6 space-y-4 md:space-y-0"
+        class="flex flex-col md:flex-row justify-between items-center text-white font-medium text-[14px] md:text-[18px] leading-[30px] mt-6 pb-6 space-y-4 md:space-y-0 w-full"
       >
         <p class="text-center md:text-left">
           © 2025 J7 IT Solutions. Copyright and rights reserved

@@ -52,7 +52,9 @@ import PlayVideoSlot from './PlayVideoSlot.vue';
         <!-- Right Side -->
         <div class="flex-1 w-full max-w-full lg:max-w-[600px]">
           <!-- Keep video responsive with aspect ratio -->
-          <div class="relative w-full aspect-video rounded-[12px] overflow-hidden">
+          <div
+            class="relative w-full aspect-video rounded-[12px] overflow-hidden"
+          >
             <PlayVideoSlot />
           </div>
         </div>
