@@ -3,24 +3,20 @@ import FeatureSlot from './FeatureSlot.vue'
 </script>
 
 <template>
-  <main class="w-full mt-13 bg-white py-16 sm:py-20 lg:py-28">
+  <main class="w-full mt-12 sm:mt-14 lg:mt-16 bg-white py-12 sm:py-16 lg:py-28">
     <!-- Section Title -->
     <p
-      class="px-4 sm:px-8 lg:px-20 font-semibold text-3xl sm:text-5xl lg:text-[64px] leading-tight text-[#272727]"
+      class="px-4 sm:px-6 lg:px-20 font-semibold mt-5 text-2xl sm:text-4xl lg:text-[64px] leading-tight text-[#272727]"
     >
       Features That Redefine<br />
-      <span
-        class="block text-4xl sm:text-6xl lg:text-[85px] text-[#469AF0] mt-2"
-      >
+      <span class="block text-3xl sm:text-5xl lg:text-[85px] text-[#469AF0] mt-1 sm:mt-2">
         Queue Management
       </span>
     </p>
 
     <!-- Main Content -->
-    <div
-      class="mt-12 sm:mt-16 lg:mt-24 px-4 sm:px-8 lg:px-20 space-y-12 sm:space-y-16 lg:space-y-24"
-    >
-      <FeatureSlot
+    <div class=" mt-8 sm:mt-12 lg:mt-24 px-4 sm:px-6 lg:px-20 space-y-8 sm:space-y-12 lg:space-y-24">
+      <FeatureSlot 
         title="The QUEWIE Features"
         highlight="Real-Time Queue Management"
         description="Track, manage, and update queues instantly. Customers can book their spot and get notified in real-time, ensuring smoother flow and less waiting frustration."

@@ -1,52 +1,54 @@
 <script setup>
 import { ref } from "vue";
 
+const NavBar = ref(true)
 const menuOpen = ref(false);
 </script>
 
 <template>
   <header
-    class="flex fixed top-0 left-0 w-full items-center justify-between 
-           bg-white h-[94px] border-b border-gray-200
-           shadow-[0px_4px_16.2px_2px_#0000001A] 
-           px-6 md:px-[85px] text-[16px] font-normal z-100">
-
+    class="fixed top-0 left-0 w-full flex items-center justify-between
+           bg-white h-[94px] border-b border-gray-200 shadow-[0px_4px_16.2px_2px_#0000001A]
+           px-4 sm:px-6 md:px-10 lg:px-[85px] z-999"
+  >
     <!-- Logo -->
     <div>
-      <img src="/images/quewielogo.png" class="h-[50px] w-auto md:h-[76px] md:w-[206px]" />
+      <img src="/images/quewielogo.png" class="h-[50px] sm:h-[60px] md:h-[70px] lg:h-[76px] w-auto md:w-[206px]" />
     </div>
 
-    <!-- Nav (Desktop) -->
-    <nav class="hidden md:flex space-x-8 lg:space-x-13 text-black font-medium">
+    <!-- Navigation (Desktop only) -->
+    <nav class="hidden lg:flex space-x-4 xl:space-x-10 text-black font-medium">
       <RouterLink to="/" class="hover:text-[#3691EF]">HOME</RouterLink>
       <RouterLink to="/aboutus" class="hover:text-[#3691EF]">ABOUT US</RouterLink>
       <RouterLink to="/features" class="hover:text-[#3691EF]">FEATURES</RouterLink>
       <RouterLink to="/solutions" class="hover:text-[#3691EF]">SOLUTIONS</RouterLink>
     </nav>
 
-    <!-- Login/Logout (Desktop) -->
-    <div class="hidden md:flex space-x-3">
+    <!-- Login/Signup (Desktop only) -->
+    <div class="hidden lg:flex space-x-3">
       <button class="text-black hover:text-[#3691EF]">Login</button>
       <button class="bg-[#3691EF] text-white rounded-[5px] w-[96px] h-[32px] hover:bg-blue-600">
         Sign up
       </button>
     </div>
 
-    <!-- Mobile Menu Button -->
-    <button class="md:hidden text-3xl" @click="menuOpen = !menuOpen">
+    <!-- Burger Menu (Mobile & Tablet) -->
+    <button class="lg:hidden text-3xl" @click="menuOpen = !menuOpen">
       ☰
     </button>
   </header>
 
-  <!-- Mobile Dropdown -->
-  <transition name="fade" class="bg-white">
+  <!-- Mobile & Tablet Dropdown -->
+  <transition name="fade">
     <div
-      v-if="menuOpen" 
-      class="md:hidden  top-[94px] left-0 w-full bg-white shadow-lg flex flex-col items-center py-6 space-y-4 z-150 fixed">
+      v-if="menuOpen"
+      class="lg:hidden fixed top-[94px] left-0 w-full bg-white shadow-lg flex flex-col items-center py-6 space-y-4 z-40"
+    >
       <RouterLink to="/" class="hover:text-[#3691EF]" @click="menuOpen = false">HOME</RouterLink>
       <RouterLink to="/aboutus" class="hover:text-[#3691EF]" @click="menuOpen = false">ABOUT US</RouterLink>
       <RouterLink to="/features" class="hover:text-[#3691EF]" @click="menuOpen = false">FEATURES</RouterLink>
       <RouterLink to="/solutions" class="hover:text-[#3691EF]" @click="menuOpen = false">SOLUTIONS</RouterLink>
+
       <button class="w-[90%] bg-[#3691EF] text-white rounded-[5px] h-[40px] hover:bg-blue-600">
         Sign up
       </button>
@@ -60,7 +62,7 @@ const menuOpen = ref(false);
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 .fade-enter-from,
 .fade-leave-to {

@@ -12,31 +12,34 @@ import PlayVideoSlot from './PlayVideoSlot.vue';
             About <span class="text-[#3691EF]">Us</span>
         </h1>
 
-        <!-- Parent Section -->
-        <div
-            class="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 mt-8 px-4 sm:px-8 lg:px-[158px]">
-            <!-- Left Side -->
-            <div class="flex-1">
-                <h2 class="text-2xl sm:text-3xl lg:text-[32px] font-semibold leading-[160%] text-[#3691EF]">
-                    Who We Are
-                </h2>
-                <!-- description -->
-                <div class="mt-4">
-                    <p
-                        class="text-base sm:text-lg lg:text-[22px] font-normal leading-[180%] text-[#696984] text-justify">
-                        At QUEWIE, we believe waiting should never feel like wasted time.
-                        Founded with a vision to revolutionize the way businesses and
-                        institutions handle queues, QUEWIE combines technology, efficiency,
-                        and customer-focused innovation to transform service experiences.
-                    </p>
-                </div>
-            </div>
+<!-- Parent Section -->
+<div
+  class="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 mt-8 px-4 sm:px-8 lg:px-[158px]">
 
-            <!-- Right Side (Video) -->
-            <div class="flex-1 flex justify-center lg:justify-end">
-                <PlayVideoSlot />
-            </div>
-        </div>
+  <!-- Left Side -->
+  <div class="flex-1 w-full">
+    <h2 class="text-2xl sm:text-3xl lg:text-[32px] font-semibold leading-[160%] text-[#3691EF]">
+      Who We Are
+    </h2>
+    <!-- description -->
+    <div class="mt-4">
+      <p
+        class="text-base sm:text-lg lg:text-[22px] font-normal leading-[180%] text-[#696984] text-justify">
+        At QUEWIE, we believe waiting should never feel like wasted time.
+        Founded with a vision to revolutionize the way businesses and
+        institutions handle queues, QUEWIE combines technology, efficiency,
+        and customer-focused innovation to transform service experiences.
+      </p>
+    </div>
+  </div>
+
+  <!-- Right Side (Video) -->
+  <div class="flex-1 w-full flex justify-center lg:justify-end items-center">
+    <div class="w-full sm:w-[400px] lg:w-[544px]">
+      <PlayVideoSlot class="w-full h-auto" />
+    </div>
+  </div>
+</div>
 
         <!-- Mission Section -->
         <div class="mt-12 sm:mt-16 lg:mt-20 text-center px-4 sm:px-8">
